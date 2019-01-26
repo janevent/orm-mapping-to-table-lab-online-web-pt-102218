@@ -11,7 +11,10 @@ class Student
   end
   
   def self.create_table
-    sql <<- 
+    sql <<-anything
+    CREATE TABLE students
+    anything
+    (id )
   end
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]  
