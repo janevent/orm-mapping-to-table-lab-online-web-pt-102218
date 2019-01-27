@@ -34,7 +34,7 @@ class Student
     (name, grade)
     VALUES (?, ?)
     anything
-    DB[:conn].execute(sql, name, grade)
+    DB[:conn].execute(sql)
     
   end
   # Remember, you can access your database connection anywhere in this class
