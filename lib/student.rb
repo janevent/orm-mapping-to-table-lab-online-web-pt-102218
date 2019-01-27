@@ -35,7 +35,7 @@ class Student
     VALUES (?, ?)
     anything
     DB[:conn].execute(sql)
-    @id =DB[:conn].execute("SELECT last_insert_rowid)
+    @id =DB[:conn].execute("SELECT last_insert_rowid() FROM students")
     
   end
   # Remember, you can access your database connection anywhere in this class
