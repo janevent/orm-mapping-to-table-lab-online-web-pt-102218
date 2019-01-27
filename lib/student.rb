@@ -29,7 +29,13 @@ class Student
   end
   
   def save
-    sql = <<
+    sql = <<-anything
+    INSERT INTO students
+    (name, grade)
+    VALUES (?, ?)
+    anything
+    ;
+    
   end
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]  
