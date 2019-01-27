@@ -35,6 +35,7 @@ class Student
     VALUES (?, ?)
     anything
     DB[:conn].execute(sql)
+    @id = 
     
   end
   # Remember, you can access your database connection anywhere in this class
